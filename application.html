@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrackFlow | Solicitud de Evaluacion Logistica</title>
+    <meta
+      name="description"
+      content="Completa el formulario de TrackFlow para evaluar tu operacion logistica y escalar tu e-commerce."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-slate-100 text-slate-900">
+    <header class="border-b border-slate-200 bg-white">
+      <div class="mx-auto flex w-full max-w-5xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="index.html" class="text-sm font-semibold text-teal-700 transition hover:text-teal-800">Volver al inicio</a>
+        <p class="text-sm text-slate-500">Formulario de aplicacion</p>
+      </div>
+    </header>
+
+    <main class="mx-auto w-full max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
+      <section class="mb-8">
+        <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Aplicacion TrackFlow</h1>
+        <p class="mt-3 max-w-3xl text-sm text-slate-600 sm:text-base">
+          Completa tus datos para disenar una propuesta logistica alineada con el crecimiento de tu e-commerce.
+        </p>
+      </section>
+
+      <section>
+        <form id="applicationForm" action="#" method="post" novalidate class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8">
+          <fieldset class="space-y-5">
+            <legend class="mb-2 text-lg font-bold text-slate-900">Datos de la empresa</legend>
+
+            <div class="grid gap-5 md:grid-cols-2">
+              <div>
+                <label for="nombre_empresa" class="mb-2 block text-sm font-medium text-slate-700">Nombre empresa *</label>
+                <input
+                  id="nombre_empresa"
+                  name="nombre_empresa"
+                  type="text"
+                  required
+                  autocomplete="organization"
+                  class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-teal-500 focus:ring-2 focus:ring-teal-200"
+                  placeholder="Ej. NovaShop"
+                />
+              </div>
+
+              <div>
+                <label for="persona_contacto" class="mb-2 block text-sm font-medium text-slate-700">Persona contacto *</label>
+                <input
+                  id="persona_contacto"
+                  name="persona_contacto"
+                  type="text"
+                  required
+                  autocomplete="name"
+                  class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-teal-500 focus:ring-2 focus:ring-teal-200"
+                  placeholder="Nombre y apellido"
+                />
+              </div>
+
+              <div>
+                <label for="email" class="mb-2 block text-sm font-medium text-slate-700">Email *</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  autocomplete="email"
+                  class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-teal-500 focus:ring-2 focus:ring-teal-200"
+                  placeholder="contacto@empresa.com"
+                />
+              </div>
+
+              <div>
+                <label for="telefono" class="mb-2 block text-sm font-medium text-slate-700">Telefono *</label>
+                <input
+                  id="telefono"
+                  name="telefono"
+                  type="tel"
+                  required
+                  autocomplete="tel"
+                  class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-teal-500 focus:ring-2 focus:ring-teal-200"
+                  placeholder="+1 555 000 000"
+                />
+              </div>
+
+              <div class="md:col-span-2">
+                <label for="sitio_web" class="mb-2 block text-sm font-medium text-slate-700">Sitio web *</label>
+                <input
+                  id="sitio_web"
+                  name="sitio_web"
+                  type="url"
+                  required
+                  autocomplete="url"
+                  class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-teal-500 focus:ring-2 focus:ring-teal-200"
+                  placeholder="https://www.tusitio.com"
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="mt-8 space-y-5 border-t border-slate-200 pt-6">
+            <legend class="mb-2 text-lg font-bold text-slate-900">Perfil logistico</legend>
+
+            <div class="grid gap-5 md:grid-cols-3">
+              <div>
+                <label for="pais" class="mb-2 block text-sm font-medium text-slate-700">Pais *</label>
+                <select
+                  id="pais"
+                  name="pais"
+                  required
+                  class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-900 outline-none transition focus:border-teal-500 focus:ring-2 focus:ring-teal-200"
+                >
+                  <option value="">Selecciona un pais</option>
+                  <option value="us">Estados Unidos</option>
+                  <option value="es">Espana</option>
+                  <option value="mx">Mexico</option>
+                  <option value="co">Colombia</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="tipo_producto" class="mb-2 block text-sm font-medium text-slate-700">Tipo producto *</label>
+                <select
+                  id="tipo_producto"
+                  name="tipo_producto"
+                  required
+                  class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-900 outline-none transition focus:border-teal-500 focus:ring-2 focus:ring-teal-200"
+                >
+                  <option value="">Selecciona una categoria</option>
+                  <option value="moda">Moda</option>
+                  <option value="cosmetica">Cosmetica</option>
+                  <option value="electronica">Electronica</option>
+                  <option value="hogar">Hogar</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="volumen_mensual" class="mb-2 block text-sm font-medium text-slate-700">Volumen mensual *</label>
+                <select
+                  id="volumen_mensual"
+                  name="volumen_mensual"
+                  required
+                  class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-900 outline-none transition focus:border-teal-500 focus:ring-2 focus:ring-teal-200"
+                >
+                  <option value="">Selecciona un rango</option>
+                  <option value="0-100">0 - 100 envios/mes</option>
+                  <option value="101-500">101 - 500 pedidos</option>
+                  <option value="501-2000">501 - 2,000 pedidos</option>
+                  <option value="2001-10000">2,001 - 10,000 pedidos</option>
+                  <option value="10001+">Mas de 10,000 pedidos</option>
+                </select>
+                <p id="volumen_warning" class="mt-2 hidden text-xs font-medium text-amber-700" aria-live="polite"></p>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="mt-8 space-y-4 border-t border-slate-200 pt-6">
+            <legend class="mb-2 text-lg font-bold text-slate-900">Servicios de interes *</legend>
+            <p class="text-sm text-slate-600">Selecciona al menos un servicio.</p>
+
+            <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              <label for="serv_fulfillment" class="flex items-start gap-3 rounded-lg border border-slate-200 p-3 text-sm hover:border-teal-300">
+                <input id="serv_fulfillment" name="servicios" type="checkbox" value="fulfillment" required class="mt-1 h-4 w-4 rounded border-slate-300 text-teal-600 focus:ring-teal-500" />
+                <span>Fulfillment</span>
+              </label>
+
+              <label for="serv_ultima_milla" class="flex items-start gap-3 rounded-lg border border-slate-200 p-3 text-sm hover:border-teal-300">
+                <input id="serv_ultima_milla" name="servicios" type="checkbox" value="ultima_milla" class="mt-1 h-4 w-4 rounded border-slate-300 text-teal-600 focus:ring-teal-500" />
+                <span>Ultima milla</span>
+              </label>
+
+              <label for="serv_devoluciones" class="flex items-start gap-3 rounded-lg border border-slate-200 p-3 text-sm hover:border-teal-300">
+                <input id="serv_devoluciones" name="servicios" type="checkbox" value="devoluciones" class="mt-1 h-4 w-4 rounded border-slate-300 text-teal-600 focus:ring-teal-500" />
+                <span>Gestion de devoluciones</span>
+              </label>
+
+              <label for="serv_crossborder" class="flex items-start gap-3 rounded-lg border border-slate-200 p-3 text-sm hover:border-teal-300">
+                <input id="serv_crossborder" name="servicios" type="checkbox" value="crossborder" class="mt-1 h-4 w-4 rounded border-slate-300 text-teal-600 focus:ring-teal-500" />
+                <span>Cross-border</span>
+              </label>
+
+              <label for="serv_b2b" class="flex items-start gap-3 rounded-lg border border-slate-200 p-3 text-sm hover:border-teal-300">
+                <input id="serv_b2b" name="servicios" type="checkbox" value="b2b" class="mt-1 h-4 w-4 rounded border-slate-300 text-teal-600 focus:ring-teal-500" />
+                <span>Distribucion B2B</span>
+              </label>
+
+              <label for="serv_analitica" class="flex items-start gap-3 rounded-lg border border-slate-200 p-3 text-sm hover:border-teal-300">
+                <input id="serv_analitica" name="servicios" type="checkbox" value="analitica" class="mt-1 h-4 w-4 rounded border-slate-300 text-teal-600 focus:ring-teal-500" />
+                <span>Analitica operativa</span>
+              </label>
+            </div>
+            <p id="servicios_error" class="text-xs font-medium text-red-600" aria-live="polite"></p>
+          </fieldset>
+
+          <fieldset class="mt-8 space-y-4 border-t border-slate-200 pt-6">
+            <legend class="mb-2 text-lg font-bold text-slate-900">3PL actual *</legend>
+            <div class="grid gap-3 sm:grid-cols-3">
+              <label for="pl_si" class="flex items-center gap-3 rounded-lg border border-slate-200 p-3 text-sm hover:border-teal-300">
+                <input id="pl_si" name="pl_actual" type="radio" value="si" required class="h-4 w-4 border-slate-300 text-teal-600 focus:ring-teal-500" />
+                <span>Si</span>
+              </label>
+              <label for="pl_no" class="flex items-center gap-3 rounded-lg border border-slate-200 p-3 text-sm hover:border-teal-300">
+                <input id="pl_no" name="pl_actual" type="radio" value="no" class="h-4 w-4 border-slate-300 text-teal-600 focus:ring-teal-500" />
+                <span>No</span>
+              </label>
+              <label for="pl_transicion" class="flex items-center gap-3 rounded-lg border border-slate-200 p-3 text-sm hover:border-teal-300">
+                <input id="pl_transicion" name="pl_actual" type="radio" value="en_transicion" class="h-4 w-4 border-slate-300 text-teal-600 focus:ring-teal-500" />
+                <span>En transicion</span>
+              </label>
+            </div>
+            <p id="pl_actual_error" class="text-xs font-medium text-red-600" aria-live="polite"></p>
+          </fieldset>
+
+          <fieldset class="mt-8 space-y-5 border-t border-slate-200 pt-6">
+            <legend class="mb-2 text-lg font-bold text-slate-900">Detalles adicionales</legend>
+
+            <div>
+              <label for="comentarios" class="mb-2 block text-sm font-medium text-slate-700">Comentarios</label>
+              <textarea
+                id="comentarios"
+                name="comentarios"
+                rows="5"
+                class="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-teal-500 focus:ring-2 focus:ring-teal-200"
+                placeholder="Comparte tus necesidades, integraciones o fechas clave."
+              ></textarea>
+            </div>
+
+            <div class="rounded-lg border border-slate-200 bg-slate-50 p-4">
+              <label for="privacidad" class="flex items-start gap-3 text-sm text-slate-700">
+                <input
+                  id="privacidad"
+                  name="privacidad"
+                  type="checkbox"
+                  required
+                  class="mt-0.5 h-4 w-4 rounded border-slate-300 text-teal-600 focus:ring-teal-500"
+                />
+                <span>Acepto la politica de privacidad y el tratamiento de datos para fines comerciales de TrackFlow. *</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="mt-8 flex flex-col-reverse gap-3 border-t border-slate-200 pt-6 sm:flex-row sm:justify-end">
+            <button
+              type="reset"
+              class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-300"
+            >
+              Limpiar
+            </button>
+            <button
+              type="submit"
+              class="inline-flex items-center justify-center rounded-lg bg-teal-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-300"
+            >
+              Enviar
+            </button>
+          </div>
+          <p id="form_success" class="mt-4 hidden rounded-lg border border-emerald-300 bg-emerald-50 px-4 py-3 text-sm font-medium text-emerald-800" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+    <script src="validation.js"></script>
+  </body>
+</html>
