@@ -1,0 +1,21 @@
+seccion,metrica,valor
+general,archivo,incidents-trackflow.csv
+general,columnas,11
+general,filas_leidas,100
+general,registros_validos,97
+general,registros_invalidos,3
+general,total_procesados,100
+categorias_validas,DAMAGE,7
+categorias_validas,DELAYED_DELIVERY,38
+categorias_validas,LOST_PARCEL,15
+categorias_validas,RETURN_REQUEST,17
+categorias_validas,WRONG_ADDRESS,20
+estados_validos,cerrado,53
+estados_validos,descartado,14
+estados_validos,abierto,30
+satisfaccion,media_cerrados_con_puntuacion,3.06
+problemas_por_tipo,campo faltante,1
+problemas_por_tipo,formato invalido,2
+detalle_por_regla,campo faltante | category,1
+detalle_por_regla,formato invalido | tracking_number,1
+detalle_por_regla,formato invalido | customer_email,1
